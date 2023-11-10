@@ -8,6 +8,11 @@ const Comments = props => {
   return (
     <div className='comments-wrapper'>
       {/* map through the comments prop and render a Comment for every piece of data */}
+
+      {
+        comments.map(comm =>  <Comment comment={comm} key={comm.id} /> )
+      }
+
     </div>
   );
 };
